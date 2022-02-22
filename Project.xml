@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-        <app title="Friday Night Funkin': Psych Engine" file="PsychEngine" packageName="com.sawsirox.psychengine" package="com.sawsirox.psychengine" main="Main" version="0.2.7" company="SawSirox" />
+	<app title="FNF: DDTO RECREARION" file="PsychEngineAndroid" packageName="com.darky.ddtorecre" package="com.darky.ddtorecre" main="Main" version="0.2.7" company="darky" />
 	
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 
@@ -48,7 +48,6 @@
 	<assets path="assets/preload" rename="assets" exclude="*.mp3"  unless="web"/>
 	
 	<!-- PSYCH ENGINE CUSTOMIZATION -->
-	<define name="MODS_ALLOWED" if="desktop || mobile" />
 	<define name="LUA_ALLOWED" if="desktop || mobile" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS ON TITLE SCREEN -->
@@ -119,7 +118,7 @@
 	<haxelib name="flixel-addons" />
 	<haxelib name="hscript" />
 
-	<haxelib name="extension-webview" if="android"/> 
+	<haxelib name="extension-webm" unless="html5"/> 
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
@@ -127,10 +126,6 @@
 	<haxelib name="faxe" if='switch'/>
 	<!--<haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="desktop"/>
-        <haxelib name="AndroidTools" if="android"/>
-
-        <config:android permission="android.permission.READ_EXTERNAL_STORAGE" if="android"/>
-        <config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" if="android"/>
 	<!-- <haxelib name="hxcpp-debug-server" if="desktop"/> -->
 
 	<!-- <haxelib name="markdown" /> -->
