@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="FNF: DDTO RECREARION" file="PsychEngineAndroid" packageName="com.darky.ddtorecre" package="com.darky.ddtorecre" main="Main" version="0.2.7" company="darky" />
+	<app title="FNF: Psych Engine" file="PsychEngineAndroid" packageName="com.coolpeople.psychengine" package="com.coolpeople.psychengine" main="Main" version="0.2.7" company="coolpeople" />
 	
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB"/> <!-- stable luas PUT AFTER FIRST LINE WITH APP NAME AND ETC -->
 
@@ -48,6 +48,7 @@
 	<assets path="assets/preload" rename="assets" exclude="*.mp3"  unless="web"/>
 	
 	<!-- PSYCH ENGINE CUSTOMIZATION -->
+	<define name="MODS_ALLOWED" if="desktop || mobile" />
 	<define name="LUA_ALLOWED" if="desktop || mobile" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS ON TITLE SCREEN -->
